@@ -14,4 +14,12 @@ class School
       return name
     end}
   end
+
+  def sort
+    new_roster = {}
+    roster.each{|num, name|
+    new_roster[num] = name.sort}
+    new_roster
+  end
+
 end
