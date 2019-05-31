@@ -8,4 +8,10 @@ class School
     roster[grade] ||= []
     roster[grade] << student
   end
+  def grade(grade)
+    @roster.detect{|num, name|
+    if num == grade
+      return name
+    end}
+  end
 end
