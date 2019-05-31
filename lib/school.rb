@@ -18,7 +18,7 @@ class School
   def sort
     new_roster = {}
     roster.each{|num, name|
-    new_roster[num] = name}
+    new_roster[num] = name.sort}
     new_roster
   end
 
